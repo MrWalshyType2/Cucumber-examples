@@ -7,12 +7,12 @@ public class MessengerHooks {
 	
 	private Messenger messenger;
 
-	@Before
+	@Before("@messenger and @service")
 	public void setup() {
 		this.messenger = new Messenger();
 	}
 	
-	@After
+	@After("@messenger")
 	public void teardown() {
 		this.messenger.close();
 	}

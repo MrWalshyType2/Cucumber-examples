@@ -2,6 +2,7 @@ package com.qa.example_4_simple_hooks.service;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 
 public class MessengerHooks {
 	

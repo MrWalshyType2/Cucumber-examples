@@ -14,13 +14,13 @@ public class UserTrackerStepDefinitions {
 	private Messenger messenger = new Messenger();
 
 	@Given("the username {word}")
-	public void theUsernameBob(String username) {
+	public void theUsername(String username) {
 	    user = new User();
 	    user.setUsername(username);
 	}
 
 	@Given("the password {word}")
-	public void thePasswordWeakpass123(String password) {
+	public void thePassword(String password) {
 	    user.setPassword(password);
 	}
 

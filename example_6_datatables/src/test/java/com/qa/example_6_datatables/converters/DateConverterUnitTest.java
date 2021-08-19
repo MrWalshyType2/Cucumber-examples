@@ -32,6 +32,7 @@ public class DateConverterUnitTest {
 	
 	@Test
 	public void convertListTest() {
+		// Given
 		List<LocalDateTime> datesToConvert = List.of(LocalDateTime.of(LocalDate.of(1992, 1, 3), LocalTime.MIDNIGHT),
 													 LocalDateTime.of(LocalDate.of(2021, 4, 2), LocalTime.MIDNIGHT));
 		List<String> expectedOutput = List.of("Friday 3 January 1992",
